@@ -24,4 +24,12 @@ const addItemToCartLocalStorage = id => {
        savedToLocalStorage(newCart)
 }
 
-export {getCartFromLocalStorage as getSotreCart , addItemToCartLocalStorage as addToStoreCart}
+const removeFromLocalStorage = id => {
+    const storedCart = getCartFromLocalStorage();
+    const remainingCart = storedCart.filter(storedId => storedId !== id);
+    savedToLocalStorage(remainingCart)
+}
+
+export {getCartFromLocalStorage as getSotreCart , addItemToCartLocalStorage as addToStoreCart,
+removeFromLocalStorage as removeFromCart,
+}

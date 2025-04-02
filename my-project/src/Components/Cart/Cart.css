@@ -1,0 +1,13 @@
+
+.cart-container{
+    display: flex;
+    gap: 5px;
+}
+.cart-container img{
+ width: 200px;
+}
+.background-red{
+background-color: black;
+color: white;
+padding: 3px;
+}
