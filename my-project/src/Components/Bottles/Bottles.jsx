@@ -43,8 +43,8 @@ const Bottles = ({bottlesPromise}) => {
      
     return (
         <div>
-            <h3>Bottles : {bottles.length}</h3>
-            <p>Added To Card: {cart.length}</p>
+            <h3 className='font'>Bottles : {bottles.length}</h3>
+            <p className='font'>Added To Card: {cart.length}</p>
             <Cart cart={cart} handleRemoveFromCart={handleRemoveFromCart}></Cart>
           
          <div className='bottles-container'>
