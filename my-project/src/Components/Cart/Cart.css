@@ -2,6 +2,7 @@
 .cart-container{
     display: flex;
     gap: 5px;
+    flex-wrap: wrap;
 }
 .cart-container img{
  width: 200px;
